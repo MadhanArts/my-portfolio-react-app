@@ -1,0 +1,33 @@
+.nav-bar {
+    background-color: rgb(255, 203, 105);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    font-size: large;
+    box-shadow: 0 1px 10px gray;
+}
+
+.nav-bar > .menu-items > ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+a:active {
+    color: rgb(108, 218, 255);
+}
+
+.nav-bar > .menu-items > ul > li > a {
+    display: inline-block;
+    padding: 30px 20px;
+    transition: background-color 0.5s ease-out;
+}
+
+.nav-bar > .menu-items > ul > li > a:hover {
+    background-color: lightcoral;
+}
