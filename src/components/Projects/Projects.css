@@ -1,0 +1,39 @@
+.projects-container {
+    padding: 30px 10px;
+}
+
+.projects-container .section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.projects {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.projects > .project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    width: 90%;
+    flex-shrink: 0;
+    margin: 10px 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.projects > .project > img {
+    width: 30%;
+}
+
+.projects > .project > div {
+    width: 70%;
+}
+
+.project .project-title,
+.project .project-description {
+    padding: 10px 20px;
+}
