@@ -13,7 +13,7 @@
     display: flex;
 }
 
-a {
+.nav-bar a {
     text-decoration: none;
     color: purple;
 }
@@ -24,7 +24,7 @@ a:active {
 
 .nav-bar > .menu-items > ul > li > a {
     display: inline-block;
-    padding: 30px 20px;
+    padding: 20px 20px;
     transition: background-color 0.5s ease-out;
 }
 

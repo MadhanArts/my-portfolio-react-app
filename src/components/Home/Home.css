@@ -1,0 +1,77 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item {
+    /* flex-grow: 1; */
+    width: 50%;
+    display: inline-block;
+}
+
+.short-introduction-content a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.short-introduction-content {
+    margin: 15%;
+}
+
+.short-introduction-content h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.short-introduction-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.short-introduction-content h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.short-introduction-content .social-media-links {
+    margin: 3em 0;
+}
+
+.short-introduction-content .social-media-links .icon {
+    margin-right: 24px;
+    font-size: 32px;
+    /* background: gray; */
+}
+
+.short-introduction-content .social-media-links .icon:hover {
+    margin-right: 24px;
+    font-size: 32px;
+    color: #ed239f;
+}
+
+.button {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 100%);
+    padding: 0 38px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.home .profile-image img {
+    /* src: url('../mylogo.jpeg'); */
+    width: 100%;
+    background-size: cover;
+}
