@@ -37,6 +37,12 @@ function Projects() {
                     Update and Delete operation on MongoDB database using mongoose. 
                     Here I connected React and Express using Axios API call.'
                     />
+                    <Project
+                        title='CRUD Operations on MongoDB'
+                        description='This is a website, which is the demo for Create, Read, 
+                    Update and Delete operation on MongoDB database using mongoose. 
+                    Here I connected React and Express using Axios API call.'
+                    />
                 </div>
             </div>
         </div>
