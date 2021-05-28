@@ -4,6 +4,7 @@ import "./Projects.css";
 import ProjectsSection from "./ProjectsSection";
 
 function Projects() {
+
     return (
         <div className='projects-container'>
             <ProjectsSection

@@ -16,6 +16,17 @@ function About() {
                     understanding the concepts matters” and following the same.
                 </p>
             </div>
+            <div className='experience section'>
+                <h3>Experience</h3>
+                <ul>
+                    <li>
+                        <p>
+                            Done 30 days Python Internship at BEST ENLIST. NOV
+                            2020 - DEC 2020.
+                        </p>
+                    </li>
+                </ul>
+            </div>
             <div className='education section'>
                 <h3>Education</h3>
                 <h4>College</h4>

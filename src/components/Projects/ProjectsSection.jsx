@@ -12,13 +12,23 @@ function ProjectsSection({title, className, children}) {
             "." + category + " .project-container"
         );
 
-        currentSlide.current =
-            (currentSlide.current + direction) % slides.length;
+        if (currentSlide.current === 0 && direction === -1) {
+            currentSlide.current = slides.length - 1;
+        } else {
+            currentSlide.current =
+                (currentSlide.current + direction) % slides.length;
+        }
         // console.log(category + " " + slides.length + " " + currentSlide);
 
-        slides.forEach((slide) => (slide.style.display = "none"));
+        slides.forEach((slide) => {
+            // slide.classList.remove("start");
+            // slide.classList.add("end");
+            slide.style.display = "none";
+        });
 
         slides[currentSlide.current].style.display = "flex";
+        // slides[currentSlide.current].classList.remove("end");
+        // slides[currentSlide.current].classList.add("start");
 
         if (onCompletion) {
             onCompletion();
@@ -27,16 +37,18 @@ function ProjectsSection({title, className, children}) {
 
     useEffect(() => {
         const runner = () => {
-                moveSlide(classname, 1, () => {
-                    setTimeout(runner, 5000);
-                });
+            moveSlide(classname, 1, () => {
+                temp = setTimeout(runner, 5000);
+            });
         };
 
-        setTimeout(runner, 5000);
+        let temp = setTimeout(runner, 5000);
 
-        // setInterval(() => {
+        // const runner = async() => {
         //     moveSlide(classname, 1);
-        // }, 8000);
+        // }
+        // const temp = setInterval(runner, 1000);
+        return () => clearInterval(temp);
     }, [classname, moveSlide]);
 
     return (

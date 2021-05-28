@@ -12,7 +12,7 @@
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 300px;
+    /* height: 300px; */
     box-shadow: inset 0 0 10px gray;
     /* padding: 20px 30px; */
     /* padding-right: 0; */
@@ -29,15 +29,45 @@
 }
 
 .projects > .project-container {
-    position: absolute;
+    position: relative;
     
     width: 100%;
+    height: 250px;
     flex-shrink: 0;
     /* display: flex; */
     display: none;
     align-items: center;
     /* border: 2px solid darkblue; */
 }
+
+.project-container.start {
+    /* left: 50%; */
+    animation: movein 1s ease-in;
+}
+
+.project-container.end {
+    animation: moveout 1s ease-out;
+}
+
+@keyframes movein {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+
+@keyframes moveout {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
 
 .project-container:nth-child(1) {
     display: flex;
@@ -49,10 +79,12 @@
     justify-content: space-around;
     position: relative;
     width: 90%;
+    /* height: 200px; */
     margin: 20px 5%;
     cursor: pointer;
     padding: 20px 30px;
     /* border: 2px solid lightgreen; */
+    border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px gray;
 }
