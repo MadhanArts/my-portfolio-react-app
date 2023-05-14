@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { isEmpty } from 'lodash';
 
 function Contact() {
   const [hasName, setHasName] = useState(true);
@@ -27,16 +28,16 @@ function Contact() {
     event.preventDefault();
     let valid = true;
 
-    if (contactForm.name === '') {
+    if (isEmpty(contactForm.name)) {
       setHasName(false);
       valid = false;
     }
 
-    if (contactForm.email === '') {
+    if (isEmpty(contactForm.email)) {
       setHasEmail(false);
       valid = false;
     }
-    if (contactForm.message === '') {
+    if (isEmpty(contactForm.message)) {
       setHasMessage(false);
       valid = false;
     }
