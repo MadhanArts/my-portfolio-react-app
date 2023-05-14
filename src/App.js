@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound/NotFound";
 function App() {
     return (
         <div className='App'>
+            <div className="trans">
             <Router>
                 <NavBar />
 
@@ -33,6 +34,7 @@ function App() {
                     </Switch>
                 </div>
             </Router>
+            </div>
         </div>
     );
 }

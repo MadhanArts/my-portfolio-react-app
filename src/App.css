@@ -1,12 +1,21 @@
 /* html, body {
     background-color: rgb(241, 241, 241);
-} */
+}  */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid #000; */
+}
+
+.App {
+    background: url(./components/mylogo.jpeg) repeat;
+    background-size: 100%;
+}
+
+.trans {
+    background: rgba(144, 223, 54, 0.3) repeat;
 }
 
 .content {
@@ -49,7 +58,7 @@ h5 {
 }
 
 label {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 p {
